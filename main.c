@@ -149,11 +149,11 @@ int main() {
 //         mx_del_strarr(&strarr);
 //         mx_printstr("strarr after mx_del_strarr is (null)? | "); printf("%s\n", (char *) strarr);
 
-//     mx_printstr("\n\n----------------MX_GET_CHAR_INDEX-------------------\n");
-//         char *get_char_index = "123456789";
-//         mx_printstr("mx_get_char_index return 4? | "); mx_printint(mx_get_char_index(get_char_index, '5')); mx_printstr("\n");
-//         mx_printstr("mx_get_char_index return -1? | "); mx_printint(mx_get_char_index(get_char_index, 'A')); mx_printstr("\n");
-//         mx_printstr("mx_get_char_index return -2? | "); mx_printint(mx_get_char_index(NULL, '5')); mx_printstr("\n");
+    // mx_printstr("\n\n----------------MX_GET_CHAR_INDEX-------------------\n");
+    //     char *get_char_index = "123456789";
+    //     mx_printstr("mx_get_char_index return 4? | "); mx_printint(mx_get_char_index(get_char_index, '5')); mx_printstr("\n");
+    //     mx_printstr("mx_get_char_index return -1? | "); mx_printint(mx_get_char_index(get_char_index, 'A')); mx_printstr("\n");
+    //     mx_printstr("mx_get_char_index return -2? | "); mx_printint(mx_get_char_index(NULL, '5')); mx_printstr("\n");
 
 //     mx_printstr("\n\n----------------MX_STRDUP-------------------\n");
 //         char *strdup1 = mx_strdup("123456789");
@@ -187,10 +187,10 @@ int main() {
 //         mx_printstr("strcat \t  return   \t   | "); mx_printstr(strcat(strcat1, strcat2));
 //         mx_printstr("\nmx_strcat return the same? | "); mx_printstr(strcat(strcat3, strcat4)); mx_printstr("\n");
 
-    mx_printstr("\n\n----------------MX_STRSTR-------------------\n");
-        char *strstr1 = "12345679";
-        char *cmp = "5";
-        printf("strstr return \"%s\". mx_strstr return the same? | %s\n", strstr(strstr1, cmp), mx_strstr(strstr1, cmp));
+    // mx_printstr("\n\n----------------MX_STRSTR-------------------\n");
+    //     char *strstr1 = "12345679";
+    //     char *cmp = "5";
+    //     printf("strstr return \"%s\". mx_strstr return the same? | %s\n", strstr(strstr1, cmp), mx_strstr(strstr1, cmp));
 
 //     mx_printstr("\n\n----------------MX_GET_SUBSTR_INDEX-------------------\n");
 //         mx_printstr("mx_get_substr_index \"2\"? | "); mx_printint(mx_get_substr_index("McDonalds", "Don")); mx_printstr("\n");
@@ -199,33 +199,33 @@ int main() {
 //         mx_printstr("mx_get_substr_index \"-2\"? | "); mx_printint(mx_get_substr_index("McDonalds", NULL)); mx_printstr("\n");
 //         mx_printstr("mx_get_substr_index \"-2\"? | "); mx_printint(mx_get_substr_index(NULL, "Don")); mx_printstr("\n");
 
-//     write(1, "\n\n----------------MX_COUNT_SUBSTR-------------------\n", 53);
-//         char *count_substr = "yo, yo, yo Neo";
-//         mx_printstr("mx_count_substr return \"3\"? | "); mx_printint(mx_count_substr(count_substr, "yo")); mx_printstr("\n");
-//         mx_printstr("mx_count_substr return \"-1\"? (null's check) | "); mx_printint(mx_count_substr(count_substr, NULL)); mx_printstr("\n");
-//         mx_printstr("mx_count_substr return \"-1\"? (null's check) | "); mx_printint(mx_count_substr(NULL, "yo")); mx_printstr("\n");
+    // write(1, "\n\n----------------MX_COUNT_SUBSTR-------------------\n", 53);
+    //     char *count_substr = "yo, yo, yo Neo";
+    //     mx_printstr("mx_count_substr return \"3\"? | "); mx_printint(mx_count_substr(count_substr, "yo")); mx_printstr("\n");
+    //     mx_printstr("mx_count_substr return \"-1\"? (null's check) | "); mx_printint(mx_count_substr(count_substr, NULL)); mx_printstr("\n");
+    //     mx_printstr("mx_count_substr return \"-1\"? (null's check) | "); mx_printint(mx_count_substr(NULL, "yo")); mx_printstr("\n");
 
-//     mx_printstr("\n\n----------------MX_COUNT_WORDS-------------------\n");
-//         char *count_words = "   follow  *    the   white   rabbit";
-//         mx_printstr("mx_count_words return \"2\"? | "); mx_printint(mx_count_words(count_words, '*')); mx_printstr("\n");
-//         mx_printstr("mx_count_words return \"5\"? | "); mx_printint(mx_count_words(count_words, ' ')); mx_printstr("\n");
-//         mx_printstr("mx_count_words return \"-1\"? (null's check) | "); mx_printint(mx_count_words(NULL, ' ')); mx_printstr("\n");
+    // mx_printstr("\n\n----------------MX_COUNT_WORDS-------------------\n");
+    //     char *count_words = "   follow  *    the   white   rabbit";
+    //     mx_printstr("mx_count_words return \"2\"? | "); mx_printint(mx_count_words(count_words, '*')); mx_printstr("\n");
+    //     mx_printstr("mx_count_words return \"5\"? | "); mx_printint(mx_count_words(count_words, ' ')); mx_printstr("\n");
+    //     mx_printstr("mx_count_words return \"-1\"? (null's check) | "); mx_printint(mx_count_words(NULL, ' ')); mx_printstr("\n");
 
 //     mx_printstr("\n\n----------------MX_STRNEW-------------------\n");
 //         char *strnew = mx_strnew(5);
 //         mx_printstr("mx_strnew return \"^@^@^@^@^@$\"? (check with cat -e) | "); write( 1, strnew, 5); mx_printstr("\n");
 
-//     mx_printstr("\n\n----------------MX_STRTRIM-------------------\n");
-//         char strtrim[] = "\f    My name... is Neo   \t\n ";
-//         char strtrim2[] = "My name... is Neo   \t\n ";
-//         char strtrim3[] = "           \t             \n ";
-//         char *cleared_trim = mx_strtrim(strtrim);
-//         char *cleared_trim2 = mx_strtrim(strtrim2);
-//         char *cleared_trim3 = mx_strtrim(strtrim3);
-//         mx_printstr("mx_strtrim return \"My name... is Neo\"? | "); mx_printstr(cleared_trim); mx_printstr("\n");
-//         mx_printstr("mx_strtrim return \"My name... is Neo\"? | "); mx_printstr(cleared_trim2); mx_printstr("\n");
-//         mx_printstr("mx_strtrim return \"\"? | "); printf("\"%s\"\n", cleared_trim3);
-//         mx_printstr("mx_strtrim return (null)? | "); printf("%s\n", mx_strtrim(NULL));
+    mx_printstr("\n\n----------------MX_STRTRIM-------------------\n");
+        char strtrim[] = "\f    My name... is Neo   \t\n ";
+        char strtrim2[] = "My name... is Neo   \t\n ";
+        char strtrim3[] = "           \t             \n ";
+        char *cleared_trim = mx_strtrim(strtrim);
+        char *cleared_trim2 = mx_strtrim(strtrim2);
+        char *cleared_trim3 = mx_strtrim(strtrim3);
+        mx_printstr("mx_strtrim return \"My name... is Neo\"? | "); mx_printstr(cleared_trim); mx_printstr("\n");
+        mx_printstr("mx_strtrim return \"My name... is Neo\"? | "); mx_printstr(cleared_trim2); mx_printstr("\n");
+        mx_printstr("mx_strtrim return \"\"? | "); printf("\"%s\"\n", cleared_trim3);
+        mx_printstr("mx_strtrim return (null)? | "); printf("%s\n", mx_strtrim(NULL));
 
 //     mx_printstr("\n\n----------------MX_DEL_EXTRA_SPACES-------------------\n");
 //         char del_spaces[] = "\f    My name...      is    \r  Neo   \t\n ";

@@ -9,9 +9,11 @@ char *mx_itoa(int number) {
         number *= -1;
         len++;
     }
+    if(number == 0)
+        return "0";
     char *res = mx_strnew(len);
 
-    for (int i = 0; number != 0; i++) {
+    for (int i = 0; number > 0; i++) {
         res[i] = number % 10 + '0';
         number /= 10;
     }

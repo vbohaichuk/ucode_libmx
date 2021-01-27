@@ -8,6 +8,11 @@
 #include <malloc/malloc.h>
 #include <stdio.h>
 
+typedef struct s_list {
+    void *data;
+    struct s_list *next;
+    }          t_list;
+
 void mx_printchar(char c);
 void mx_printstr(const char *s);
 int mx_strlen(const char *s);
@@ -43,3 +48,4 @@ int mx_count_substr(const char *str, const char *sub);
 int mx_get_char_index(const char *str, char c);
 bool mx_isspace(char c);
 char *mx_strtrim(const char *str);
+t_list *mx_create_node(void *data);

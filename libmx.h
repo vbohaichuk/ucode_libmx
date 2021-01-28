@@ -49,3 +49,4 @@ int mx_get_char_index(const char *str, char c);
 bool mx_isspace(char c);
 char *mx_strtrim(const char *str);
 t_list *mx_create_node(void *data);
+void mx_push_front(t_list **list, void *data);

@@ -481,15 +481,15 @@ int main() {
 
 
     // mx_printstr(" *************************************\n *\t\tLIST PACK\t     *\n *************************************\n\n");
-    mx_printstr("\n----------------MX_CREATE_NODE-------------------\n");
-        char *create_node_str = "HEAD";
-        t_list *create_node = mx_create_node(create_node_str), *head = create_node;
-        for (int i = 0; create_node; i++) {
-            char *buf = (char *)create_node->data;
-            mx_printstr("mx_create_node return \"HEAD\"? | "); mx_printstr(buf); mx_printstr("\n");
-            create_node = create_node->next;
-        }
-        free(create_node), free(head);
+    // mx_printstr("\n----------------MX_CREATE_NODE-------------------\n");
+    //     char *create_node_str = "HEAD";
+    //     t_list *create_node = mx_create_node(create_node_str), *head = create_node;
+    //     for (int i = 0; create_node; i++) {
+    //         char *buf = (char *)create_node->data;
+    //         mx_printstr("mx_create_node return \"HEAD\"? | "); mx_printstr(buf); mx_printstr("\n");
+    //         create_node = create_node->next;
+    //     }
+    //     free(create_node), free(head);
 
     // mx_printstr("\n\n----------------MX_PUSH_FRONT-------------------\n");
     //     char *front_str = "HEAD", *front_str1 = "STR1", *front_str2 = "STR2", *front_str3 = "STR3";
@@ -505,11 +505,11 @@ int main() {
     //         mx_printstr("\""); mx_printstr(buf); mx_printstr("\""); mx_printstr(" ");
     //         front_new_list = front_new_list->next;
     //     }
-    //     mx_printstr("\n");
-    //     while (front_new_list)
-    //         mx_pop_front(&front_new_list);
-    //     while (front_head)
-    //         mx_pop_front(&front_head);
+        // mx_printstr("\n");
+        // while (front_new_list)
+        //     mx_pop_front(&front_new_list);
+        // while (front_head)
+        //     mx_pop_front(&front_head);
 
     // mx_printstr("\n\n----------------MX_PUSH_BACK-------------------\n");
     //     char *back_str = "HEAD", *back_str1 = "STR1", *back_str2 = "STR2", *back_str3 = "STR3";

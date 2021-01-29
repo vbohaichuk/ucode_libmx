@@ -52,3 +52,5 @@ t_list *mx_create_node(void *data);
 void mx_push_front(t_list **list, void *data);
 int mx_get_substr_index(const char *str, const char *sub);
 char *mx_del_extra_spaces(const char *str);
+int mx_count_letters(const char *s, char c);
+char **mx_strsplit(const char *s, char c);

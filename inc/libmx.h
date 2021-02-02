@@ -113,25 +113,8 @@ t_list *mx_sort_list(t_list *lst, bool (*cmp)(void *, void *));
  *	OTHER USEFULL FUNCTION - 21 functions
  */
 int mx_atoi(const char *str);
-long mx_atol(const char *str);
-int mx_strncmp(const char *s1, const char *s2, int n);
-char *mx_strchr(const char *s, int c);
 bool mx_isspace(char c);
-bool mx_isdigit(int c);
-bool mx_isalpha(int c);
-bool mx_islower(int c);
-bool mx_isupper(int c);
-void mx_arr_rotate(int *arr, int size, int shift);
-char *mx_concat_words(char **words);
-int *mx_copy_int_arr(const int *src, int size);
-int mx_factorial_iter(int n);
-int mx_factorial_rec(int n);
-int mx_insertion_sort(char **arr, int size);
-void mx_is_positive(int i);
-void mx_printerr(const char *s);
-bool mx_is_odd(int value);
 int mx_s_strlen(const char *s);
-int mx_tolower(int c);
-int mx_toupper(int c);
 int mx_intlen(int n);
 int mx_count_letters(const char *s, char c);
+int mx_strncmp(const char *s1, const char *s2, int n);
